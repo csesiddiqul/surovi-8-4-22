@@ -117,14 +117,11 @@ class UpdateNewsController extends Controller
     public function destroy(UpdateNews $updateNews)
     {
 
-        $get = UpdateNews::count();
-
-        if($get > 2){
             $updateNews->delete();
             return redirect()->route('updateNews.index');
-        }
 
-        return redirect()->route('updateNews.index');
+
+
 
 
 

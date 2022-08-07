@@ -64,7 +64,7 @@
                         <p class="fottoerp"><i class="fa-solid fa-envelope"></i> {{$webdata->email}}</p>
 
                         <p class="fottoerp">
-                            <i class="fa-solid fa-hand-holding-medical"></i>
+                            <i class="fa-solid fa-globe"></i>
                             {{$webdata->websiteLink}}
                         </p>
 
@@ -125,15 +125,23 @@
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-12">
 
-                <div class="footer-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-item float-start">
+                            <p> © 2022 Surovi , All Rights Reserved.</p>
+                        </div>
+                    </div>
 
-
-                    <p>© 2020 surovi . All Rights Reserved. Ipsita Computers Pte Ltd</p>
+                    <div class="col-md-6">
+                        <div class="footer-item">
+                            <p>Developed By: <a href="https://www.ipsitasoft.com/" target="_blank">Ipsita Computers Pte Ltd.</a></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
 
         <div class="border-2"></div>

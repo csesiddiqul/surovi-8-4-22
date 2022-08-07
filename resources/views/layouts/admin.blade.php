@@ -1,10 +1,15 @@
+@php
+
+    $logoData = \App\Models\websiteSetting::first();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surovi | Dashboard</title>
-    <link rel="icon" type="image/png" href="{{asset('frontend/img/f-logo.png')}}">
+    <link rel="icon" type="image/png" href="{{$logoData->logo}}">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
@@ -46,7 +51,7 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__wobble" src="{{asset('admin/dist/img/surovi.png')}}" alt="AdminLTELogo" height="100" width="100">
+        <img class="animation__wobble" src="{{$logoData->logo}}" alt="AdminLTELogo" height="100" width="100">
     </div>
 
 

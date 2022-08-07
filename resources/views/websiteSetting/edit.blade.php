@@ -62,6 +62,18 @@
 
 
                                 <div class="form-group">
+                                    <label for="exampleInputTitle">Address</label>
+                                    <input type="text" value="{{$websiteSetting->address}}" name="address" class="form-control" id="exampleInputTitle" placeholder="Enter Map link">
+                                    @error('address')
+                                    <span class="note-help-block text-danger">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                    @enderror
+
+                                </div>
+
+
+                                <div class="form-group">
                                     <label for="exampleInputTitle">Map Link</label>
                                     <input type="text" value="{{$websiteSetting->mapUrl}}" name="map" class="form-control" id="exampleInputTitle" placeholder="Enter Map link">
                                     @error('map')

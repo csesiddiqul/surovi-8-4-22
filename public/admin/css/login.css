@@ -13,17 +13,17 @@
     text-align: center;
     font-weight: normal;
     margin-bottom: 0px;
-    color: #0a0e14;
+    color: #fd0000;
 
 }
 .mybtn{
     width: 316px;
     padding: 8px;
-    background: #294154;
+    background: #fd0000;
     border-radius: 8px;
     border: none;
     color: floralwhite;
-    margin-right: 16px;
+    margin: 16px;
 }
 
 .log-body {

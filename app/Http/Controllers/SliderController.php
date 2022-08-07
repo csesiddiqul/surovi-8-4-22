@@ -143,17 +143,14 @@ if ($request->hasFile('file')){
     public function destroy(slider $slider)
     {
 
-        $getslider = slider::count();
 
 
-            if($getslider > 2){
+
                 @unlink(str_replace('/Storage','Storage',$slider->url));
                 $slider->delete();
                 return redirect()->route('slider.index');
-            }
 
 
 
-        return redirect()->route('slider.index');
     }
 }

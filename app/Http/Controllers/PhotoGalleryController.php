@@ -164,19 +164,12 @@ class PhotoGalleryController extends Controller
 
 
 
-        $getphoto = photo_gallery::count();
-
-
-        if($getphoto > 3){
 
             unlink(str_replace('/Storage','Storage',$photo->img));
             $photo->delete();
 
             return redirect()->route('photo_admin.index');
-        }
 
 
-
-        return redirect()->route('photo_admin.index');
     }
 }

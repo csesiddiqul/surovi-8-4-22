@@ -16,6 +16,7 @@
                     <th>SI</th>
                     <th>Logo</th>
                     <th>Logo Name</th>
+                    <th>Address</th>
                     <th>Map</th>
                     <th>Phone</th>
                     <th>Email</th>

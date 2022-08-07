@@ -157,11 +157,11 @@ class NewsController extends Controller
         $getslider = news::count();
 
 
-        if($getslider > 4){
+
             unlink(str_replace('/Storage','Storage',$news->img));
             $news->delete();
             return redirect()->route('news.index');
-        }
+
 
         return redirect()->route('news.index');
 

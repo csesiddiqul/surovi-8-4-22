@@ -48,7 +48,7 @@
                         </tr>
                     </table>
 
-                    <a href="{{route('singaleCard',$comdata)}}" class="readmore mt-4">All Notice →</a>
+                    <a href="{{route('singaleCard',$comdata)}}" class="readmore mt-4">See More →</a>
 
                 </div>
 

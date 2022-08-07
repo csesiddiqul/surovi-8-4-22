@@ -42,7 +42,13 @@
                                 @enderror
                             </div>
                         </div>
-
+                        {{--
+                                               @if (Route::has('password.request'))
+                                                   <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                       {{ __('Forgot Your Password?') }}
+                                                   </a>
+                                               @endif
+                         --}}
 
 
                         <div class="row mb-0">
@@ -53,6 +59,9 @@
 
                             </div>
                         </div>
+
+
+
                     </form>
 
                 </div>

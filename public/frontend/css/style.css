@@ -99,16 +99,26 @@ header{
 }
 
 .haderMargin{
-    margin-top: 50px;
+    margin-top: 56px;
 }
 
-nav .navbar-brand{
-	font-family: 'pacifico';
-	color: #313131;
+nav .navbar-brand a{
+	/*font-family: 'pacifico';*/
+
+
+
+
 }
+
+.fastdata{
+    font-size: 18px;
+    font-family: 'OpenSans-ExtraBold';
+    color: red;
+}
+
 nav .navbar-brand span{
 	color: #d00b01;
-
+margin-left:3px;
 	font-size: 22px;
 }
 
@@ -203,22 +213,23 @@ nav .navbar-brand span{
 .overlay {
 	background: #939393;
 	position: relative;
-	height: 130px;
-	bottom: 130px;
+	height: 106px;
+	bottom: 106px;
 	opacity: 0.3;
+
   }
 
 /*slider end */
 /*marque end */
-.mrcue{
+.mrcueData{
     padding: 10px 0px;
     font-family: 'OpenSans-regular';
     color: #313131;
     font-weight: bold;
     text-transform: capitalize;
-    position: absolute;
     background: gainsboro;
-
+    position: absolute;
+    width: 100%;
 
 }
 
@@ -846,8 +857,8 @@ a.readmore:hover{
 	padding: 10px 0px 10px;
 }
 .border-2{
-	margin: 10px 0;
-	border: 2px solid;
+	margin: 20px 0;
+	border: 0.5px solid;
   }
 
 .mr-con {
@@ -973,7 +984,7 @@ html, body {
 
   .fottoerp{
 	margin: 34px 0px;
-	font-size: 18px;
+	font-size: 21px;
 	font-family: 'opensen-regular';
 	font-weight: 800;
 	color: #fff;
@@ -1021,6 +1032,10 @@ html, body {
     border-radius: 50%;
     margin-right: 10px;
 
+}
+
+.footer-item a{
+    color: #cac9f7;
 }
 
 /* ===============================OTHER PAGE END================== */

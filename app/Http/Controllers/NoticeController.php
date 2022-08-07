@@ -162,26 +162,19 @@ class NoticeController extends Controller
         $getlist = Notice::count();
 
 
-        if($getlist > 14){
+        if($notice->file){
+            @unlink(str_replace('/Storage','Storage',$notice->file));
 
+            $notice->delete();
 
-            if($notice->file){
-                @unlink(str_replace('/Storage','Storage',$notice->file));
+            return redirect()->route('notice.index');
 
-                $notice->delete();
+        }else{
 
-                return redirect()->route('notice.index');
-
-            }else{
-
-                $notice->delete();
-                return redirect()->route('notice.index');
-
-            }
-
+            $notice->delete();
+            return redirect()->route('notice.index');
 
         }
-
 
 
         return redirect()->route('notice.index');

@@ -64,6 +64,7 @@ class WebsiteSettingController extends Controller
         $websetting = new websiteSetting();
 
         $websetting->logo = $dbsl;
+
         $websetting->mapUrl = $request->map;
         $websetting->phone = $request->phone;
         $websetting->email = $request->email;
@@ -126,6 +127,7 @@ class WebsiteSettingController extends Controller
 
             'map' => 'required',
             'logoName' => 'required',
+            'logoName' => 'required',
             'phone' => 'required',
             'email' => 'required',
             'weblink' => 'required',
@@ -157,6 +159,9 @@ class WebsiteSettingController extends Controller
         $websiteSetting->logo = $dbsl;
         $websiteSetting->mapUrl = $request->map;
         $websiteSetting->logo_name = $request->logoName;
+
+        $websiteSetting->address = $request->address;
+
         $websiteSetting->phone = $request->phone;
         $websiteSetting->email = $request->email;
         $websiteSetting->websiteLink = $request->weblink;

@@ -23,7 +23,7 @@
 									<i class="fa-solid fa-location-dot"></i>
 
 									<h3>address</h3>
-									<p>Surovi, House # 16, Road #1205  Dhaka-1205. </p>
+									<p>{{$results->address}}</p>
 								</div>
 
 							</div>

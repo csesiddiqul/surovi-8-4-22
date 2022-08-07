@@ -158,14 +158,10 @@ if ($request->hasFile('file')){
 
 
 
-        $getcard = card::count();
-
-
-        if($getcard > 2){
             @unlink(str_replace('/Storage','Storage',$card->img));
             $card->delete();
             return redirect()->route('card.index');
-        }
+
 
 
 

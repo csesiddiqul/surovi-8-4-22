@@ -29,9 +29,7 @@
             </div>
 
 
-            <div class="mrcue">
-
-                <h3>
+            <div class="mrcueData">
                     <marquee direction="" scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();" >
 
                         @foreach($updateNews as $data)
@@ -43,13 +41,6 @@
 
 
                     </marquee>
-
-
-
-                </h3>
-
-
-
             </div>
 
             <div class="overlay">
@@ -80,7 +71,7 @@
 
                         <p class="welcom-slogan">
 
-                            {{\Illuminate\Support\Str::limit($slogandata->slogan,980)}}
+                            {{\Illuminate\Support\Str::limit($slogandata->slogan,975)}}
 
                             <a href="{{route('welcome')}}" class="readmore float-end ">Red More..</a>
                         </p>
@@ -147,7 +138,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <h1 class="title">Executive Committee</h1>
+                    <h1 class="title">Surovi Funder And Director</h1>
                     @foreach($card as $key=> $cardData)
                         <div class="commite-card"  data-aos="fade-down" data-aos-duration="1500">
                             <div class="row" >
