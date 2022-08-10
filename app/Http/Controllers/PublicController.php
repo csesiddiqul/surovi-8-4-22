@@ -22,6 +22,7 @@ use App\Models\UpdateNews;
 use App\Models\videoGallery;
 use App\Models\websiteSetting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use phpDocumentor\Reflection\Utils;
 
 class PublicController extends Controller
@@ -145,6 +146,20 @@ class PublicController extends Controller
     {
         $devlopment = mission::where('status', 1)->get();
         return view('publice_page.mission_vision',compact('devlopment'));
+    }
+
+
+    public function mail_send(Request $request)
+    {
+   /**     Mail::send('email.sendMail', ['request' => $request], function ($m) use ($request) {
+            $m->from(env('MAIL_FROM_ADDRESS'), env('APP_NAME'));
+            $m->to('labibkg@gmail.com')->subject('GET IN TOUCH');
+        });
+        return 1;
+**/
+
+
+
     }
 
     public function video_gallery()

@@ -53,31 +53,24 @@
 					</div>
 
 					<div class="col-md-12">
-						<h1 class="title">Leave Comment</h1>
+						<h1 class="title">Comment</h1>
 						<div class="contacts-form">
-							<form>
+							<form action="{{route('send.email')}}" method="post">
 
+                            @csrf
 								<div class="row">
 									<div class="col-md-6">
-										<input type="text" name="" placeholder="Name" class="form-label contact-input">
-									</div>
-									<div class="col-md-6">
-										<input type="text" name="" placeholder="phone" class="form-label contact-input">
-									</div>
-								</div>
+                                        <input type="text" name="name" placeholder="Name" class="form-label contact-input">
 
-								<div class="row">
-									<div class="col-md-6">
-										<input type="email" name="" placeholder="Email" class="form-label contact-input">
 									</div>
 									<div class="col-md-6">
-										<input type="text" name="" placeholder="Subject" class="form-label contact-input">
+                                        <input type="email" name="email" placeholder="Email" class="form-label contact-input">
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="cl-md-12">
-										<textarea placeholder="Message..." class="form-label cont-heig contact-input"></textarea>
+										<textarea name="message" placeholder="Message..." class="form-label cont-heig contact-input"></textarea>
 									</div>
 								</div>
 

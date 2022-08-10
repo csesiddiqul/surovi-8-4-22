@@ -13,7 +13,7 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <h2 class="mylog">Login <span class="scol">Surovi</span>  </h2>
+                            <h2 class="mylog">Login Surovi<span class="scol"></span>  </h2>
 
                             <div class="col-md-6">
 
@@ -42,13 +42,12 @@
                                 @enderror
                             </div>
                         </div>
-                        {{--
+
                                                @if (Route::has('password.request'))
                                                    <a class="btn btn-link" href="{{ route('password.request') }}">
                                                        {{ __('Forgot Your Password?') }}
                                                    </a>
                                                @endif
-                         --}}
 
 
                         <div class="row mb-0">

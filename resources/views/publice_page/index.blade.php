@@ -30,7 +30,7 @@
 
 
             <div class="mrcueData">
-                    <marquee direction="" scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();" >
+                    <marquee style=" padding: 3px" direction="" scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();" >
 
                         @foreach($updateNews as $data)
                             {{$data->news}}
@@ -57,7 +57,7 @@
             <h1 class="title" > welcome to surovi</h1>
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="commite-card">
 
                             <img src="{{$slogandata->file}}" class="img-fluid box-img-2">
@@ -66,20 +66,28 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="">
 
                         <p class="welcom-slogan">
-
-                            {{\Illuminate\Support\Str::limit($slogandata->slogan,975)}}
-
-                            <a href="{{route('welcome')}}" class="readmore float-end ">Red More..</a>
+                            {{substr($slogandata->slogan,0,611)}}
                         </p>
 
                     </div>
 
                 </div>
 
+                <div class="col-md-4">
+                    <div class="">
+
+                        <p class="welcom-slogan">
+                            {{\Illuminate\Support\Str::limit(substr($slogandata->slogan,611),640)}}
+                            <a href="{{route('welcome')}}" class="readmore float-end ">Red More..</a>
+                        </p>
+
+                    </div>
+
+                </div>
 
 
             </div>

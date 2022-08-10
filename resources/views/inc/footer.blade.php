@@ -7,10 +7,13 @@
             <div class="col-md-4">
                 <h1 class="title">Get in touch!</h1>
                 <div class="contacts-form">
-                    <form>
+                    <form action="{{route('send.email')}}" method="post">
+                    @csrf
+                        <input type="name" name="name" placeholder="Name" class="form-label contact-input">
 
-                        <input type="email" name="" placeholder="Email" class="form-label contact-input">
-                        <textarea placeholder="Message..." class="form-label contact-input"></textarea>
+                        <input type="email" name="email" placeholder="Email" class="form-label contact-input">
+
+                        <textarea name="message" placeholder="Message..." class="form-label contact-input"></textarea>
                         <input type="reset" name="" value="Clear-Form" class="button">
                         <input type="submit" name="" value="Send!" class="button">
                     </form>
@@ -21,11 +24,15 @@
                 <div class="tweets testimonials">
                     <ul>
                         <li>
-                            <a href="#">All Rights Reserved..</a> <br>
+
                             <span>
-                                    <a href="#">Surovi, House # 16, Road #1205 || Dhanmondi R/A, Dhaka-1205. </a> <br>
-                                    <a href="#">Call :  {{$webdata->phone}} </a> <br>
+                                     <a href="#"></a><br>
+                                    <a href="#"></a><br>
+
+                                    <a href="#"> {{$webdata->address}}</a> <br>
+                                    <a href="#">Call  :  {{$webdata->phone}} </a> <br>
                                     <a href="#">Email  :  {{$webdata->email}}</a><br>
+                                <a href="#"></a><br>
 
 
                             </span>

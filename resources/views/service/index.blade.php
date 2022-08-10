@@ -2,9 +2,9 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Service List</h3>
+            <h3 class="card-title">Program List</h3>
 
-            <a href="{{route('service.create')}}" class="btn btn-info badge-success float-right"> <i class="fa-solid fa-plus"></i> Add Service</a>
+            <a href="{{route('service.create')}}" class="btn btn-info badge-success float-right"> <i class="fa-solid fa-plus"></i> Add Program</a>
 
         </div>
         <!-- /.card-header -->

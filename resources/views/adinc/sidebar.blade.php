@@ -164,7 +164,7 @@
                     <a href="{{route('slogan.index')}}" class="nav-link">
                         <i class="nav-icon fa-solid fa-hand-fist"></i>
                         <p>
-                            Slogan
+                            About Us
 
                         </p>
                     </a>

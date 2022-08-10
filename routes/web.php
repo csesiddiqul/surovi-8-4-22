@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\contactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +26,12 @@ Route::get('/',[PublicController::class,'index'])->name('index');
 Route::get('/development', [PublicController::class, 'development'])->name('development');
 
 Route::get('/mission', [PublicController::class, 'mission'])->name('mission');
+
+//Route::post('/mail_send', [\App\Http\Controllers\contactController::class, 'mail_send'])->name('mail_send');
+
+
+Route::post('/send_email', [contactController::class, 'sendEmail'])->name('send.email');
+
 
 
 Route::get('/ongoing', [PublicController::class, 'ongoing'])->name('ongoing');

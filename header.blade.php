@@ -54,7 +54,7 @@
                 $first = strtok($logo->logo_name," ");
                 $last = substr(strstr($logo->logo_name," "),1);
             @endphp
-            <a class="navbar-brand d-md-block" href=""><span class="fastdata">{!! $first !!}</span><span style="font-size: 18px">{{$last}} </span></a>
+            <a class="navbar-brand d-md-block" href=""><span class="fastdata">{!! $first !!}</span><span style="font-size: 15px">{{$last}} </span></a>
 
             <div class=" social-icon  float-end">
                 <ul>
